@@ -25,7 +25,7 @@ export class AppComponent {
       this.ServerStatus = 'online';
     } else
     {
-      this.ServerStatus = 'offline'
+      this.ServerStatus = 'offline';
     }
     return this.ServerStatus;
   }
@@ -36,7 +36,7 @@ export class AppComponent {
   }
 
   getColor(){
-    if(this.flag){
+    if(this.flag === true){
       return 'green';
     }else {
       return 'red';
