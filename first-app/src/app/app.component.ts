@@ -12,6 +12,8 @@ export class AppComponent {
   statusFlag = false;
   buttonState = true;
   flag = true;
+  studentRoster = ['Greg', 'Patty', 'Meagan', 'Kaitlyn', 'Sarah'];
+  currentName = '';
 
   constructor(){
     setTimeout(() => {
@@ -41,5 +43,9 @@ export class AppComponent {
     }else {
       return 'red';
     }
+  }
+
+  add(){
+    this.studentRoster.push(this.currentName);
   }
 }
