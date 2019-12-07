@@ -12,3 +12,12 @@
 <p>{{ServerStatus}}</p>
 <p>Server name {{ Servername}} with Pid {{ServerPID}} is {{ServerStatus}}</p>
 <button [disabled]="buttonState" (click)="toggleServerStatus()" >Toggle Server Status</button>
+<br/>
+<br/>
+<h1>This is an example of ngif</h1>
+<p *ngIf="flag; else elseblock">Flag is true</p>
+<ng-template #elseblock>
+  <p>Flag is false</p>
+</ng-template>
+
+<button (click)="toggleFlag()">Toggle Flag</button>

@@ -11,6 +11,7 @@ export class AppComponent {
   ServerStatus = 'offline';
   statusFlag = false;
   buttonState = true;
+  flag = true;
 
   constructor(){
     setTimeout(() => {
@@ -27,5 +28,10 @@ export class AppComponent {
       this.ServerStatus = 'offline'
     }
     return this.ServerStatus;
+  }
+
+  toggleFlag(){
+    this.flag = !this.flag;
+    return this.flag;
   }
 }
