@@ -34,4 +34,12 @@ export class AppComponent {
     this.flag = !this.flag;
     return this.flag;
   }
+
+  getColor(){
+    if(this.flag){
+      return 'green';
+    }else {
+      return 'red';
+    }
+  }
 }

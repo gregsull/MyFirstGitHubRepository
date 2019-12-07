@@ -14,7 +14,7 @@
 <button [disabled]="buttonState" (click)="toggleServerStatus()" >Toggle Server Status</button>
 <br/>
 <br/>
-<h1>This is an example of ngif</h1>
+<h1 [ngStyle]="{color: getColor()}">This is an example of ngif</h1>
 <p *ngIf="flag; else elseblock">Flag is true</p>
 <ng-template #elseblock>
   <p>Flag is false</p>
