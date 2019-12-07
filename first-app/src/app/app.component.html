@@ -3,3 +3,12 @@
   <app-red></app-red>
   <app-yellow></app-yellow>
 </div>
+<h2>Input Server Information</h2>
+<input type="text" placeholder="Server Name" [(ngModel)] = "ServerName">
+<input type="text" placeholder="Server Name" [ngModel] = "ServerName">
+<h3>Display Server Information</h3>
+<p>{{ServerName}}</p>
+<p>{{ServerPID}}</p>
+<p>{{ServerStatus}}</p>
+<p>Server name {{ Servername}} with Pid {{ServerPID}} is {{ServerStatus}}</p>
+<button [disabled]="buttonState" (click)="toggleServerStatus()" >Toggle Server Status</button>
